@@ -204,6 +204,7 @@ def close():
         print("There was an error deleting the record from the amount table: ", err)
     print('__________________________________________________________________________________________________________')
 # To Show Infromation/Data of user!
+
 def show_info():
     mycursor = con1.cursor()
     mycursor.execute("SELECT account.name, account.account_number, account.contact_no, account.address, amount.total_balance FROM account JOIN amount ON account.account_number = amount.account_number ")
